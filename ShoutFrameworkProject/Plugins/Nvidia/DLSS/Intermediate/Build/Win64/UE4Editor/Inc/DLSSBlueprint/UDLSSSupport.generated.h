@@ -14,7 +14,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define DLSSBLUEPRINT_UDLSSSupport_generated_h
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID RudeMissionControlMod2_Plugins_Nvidia_DLSS_Source_DLSSBlueprint_Public_UDLSSSupport_h
+#define CURRENT_FILE_ID ShoutFrameworkProject_Plugins_Nvidia_DLSS_Source_DLSSBlueprint_Public_UDLSSSupport_h
 
 
 #define FOREACH_ENUM_UDLSSSUPPORT(op) \

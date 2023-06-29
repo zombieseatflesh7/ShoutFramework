@@ -29,10 +29,10 @@
 /wd4244
 /wd4838
 /I .
-/I "D:\Projects\DRG modding\Unreal Projects\RudeMissionControlMod2\Plugins\AMD\FSR2\Source\FSR2TemporalUpscaling\Private"
-/I "D:\Projects\DRG modding\Unreal Projects\RudeMissionControlMod2\Plugins\AMD\FSR2\Intermediate\Build\Win64\UE4Editor\Inc\FSR2TemporalUpscaling"
-/I "D:\Projects\DRG modding\Unreal Projects\RudeMissionControlMod2\Plugins\AMD\FSR2\Source"
-/I "D:\Projects\DRG modding\Unreal Projects\RudeMissionControlMod2\Plugins\AMD\FSR2\Source\FSR2TemporalUpscaling\Public"
+/I "D:\Projects\DRG modding\Github Projects\ShoutFramework\ShoutFrameworkProject\Plugins\AMD\FSR2\Source\FSR2TemporalUpscaling\Private"
+/I "D:\Projects\DRG modding\Github Projects\ShoutFramework\ShoutFrameworkProject\Plugins\AMD\FSR2\Intermediate\Build\Win64\UE4Editor\Inc\FSR2TemporalUpscaling"
+/I "D:\Projects\DRG modding\Github Projects\ShoutFramework\ShoutFrameworkProject\Plugins\AMD\FSR2\Source"
+/I "D:\Projects\DRG modding\Github Projects\ShoutFramework\ShoutFrameworkProject\Plugins\AMD\FSR2\Source\FSR2TemporalUpscaling\Public"
 /I Runtime
 /I Runtime\TraceLog\Public
 /I Runtime\Core\Public
@@ -261,12 +261,12 @@
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"
-/FI"D:\Projects\DRG modding\Unreal Projects\RudeMissionControlMod2\Intermediate\Build\Win64\FSDEditor\Development\Engine\SharedPCH.Engine.h"
-/Yu"D:\Projects\DRG modding\Unreal Projects\RudeMissionControlMod2\Intermediate\Build\Win64\FSDEditor\Development\Engine\SharedPCH.Engine.h"
-/Fp"D:\Projects\DRG modding\Unreal Projects\RudeMissionControlMod2\Intermediate\Build\Win64\FSDEditor\Development\Engine\SharedPCH.Engine.h.pch"
-"D:\Projects\DRG modding\Unreal Projects\RudeMissionControlMod2\Plugins\AMD\FSR2\Intermediate\Build\Win64\UE4Editor\Development\FSR2TemporalUpscaling\Module.FSR2TemporalUpscaling.gen.cpp"
-/FI"D:\Projects\DRG modding\Unreal Projects\RudeMissionControlMod2\Plugins\AMD\FSR2\Intermediate\Build\Win64\UE4Editor\Development\FSR2TemporalUpscaling\Definitions.FSR2TemporalUpscaling.h"
-/Fo"D:\Projects\DRG modding\Unreal Projects\RudeMissionControlMod2\Plugins\AMD\FSR2\Intermediate\Build\Win64\UE4Editor\Development\FSR2TemporalUpscaling\Module.FSR2TemporalUpscaling.gen.cpp.obj"
+/FI"D:\Projects\DRG modding\Github Projects\ShoutFramework\ShoutFrameworkProject\Intermediate\Build\Win64\FSDEditor\Development\Engine\SharedPCH.Engine.h"
+/Yu"D:\Projects\DRG modding\Github Projects\ShoutFramework\ShoutFrameworkProject\Intermediate\Build\Win64\FSDEditor\Development\Engine\SharedPCH.Engine.h"
+/Fp"D:\Projects\DRG modding\Github Projects\ShoutFramework\ShoutFrameworkProject\Intermediate\Build\Win64\FSDEditor\Development\Engine\SharedPCH.Engine.h.pch"
+"D:\Projects\DRG modding\Github Projects\ShoutFramework\ShoutFrameworkProject\Plugins\AMD\FSR2\Intermediate\Build\Win64\UE4Editor\Development\FSR2TemporalUpscaling\Module.FSR2TemporalUpscaling.gen.cpp"
+/FI"D:\Projects\DRG modding\Github Projects\ShoutFramework\ShoutFrameworkProject\Plugins\AMD\FSR2\Intermediate\Build\Win64\UE4Editor\Development\FSR2TemporalUpscaling\Definitions.FSR2TemporalUpscaling.h"
+/Fo"D:\Projects\DRG modding\Github Projects\ShoutFramework\ShoutFrameworkProject\Plugins\AMD\FSR2\Intermediate\Build\Win64\UE4Editor\Development\FSR2TemporalUpscaling\Module.FSR2TemporalUpscaling.gen.cpp.obj"
 /TP
 /GR-
 /W4
