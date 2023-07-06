@@ -14,7 +14,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define FSR2TEMPORALUPSCALING_EFSR2QualityMode_generated_h
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID RudeMissionControlMod2_Plugins_AMD_FSR2_Source_FSR2TemporalUpscaling_Public_EFSR2QualityMode_h
+#define CURRENT_FILE_ID ShoutFrameworkProject_Plugins_AMD_FSR2_Source_FSR2TemporalUpscaling_Public_EFSR2QualityMode_h
 
 
 #define FOREACH_ENUM_EFSR2QUALITYMODE(op) \
