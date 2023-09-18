@@ -28,10 +28,10 @@
 /wd4244
 /wd4838
 /I .
-/I "D:\Projects\DRG modding\Unreal Projects\RudeMissionControlMod2\Plugins\Nvidia\DLSS\Source\DLSSBlueprint\Private"
-/I "D:\Projects\DRG modding\Unreal Projects\RudeMissionControlMod2\Plugins\Nvidia\DLSS\Intermediate\Build\Win64\UE4\Inc\DLSSBlueprint"
-/I "D:\Projects\DRG modding\Unreal Projects\RudeMissionControlMod2\Plugins\Nvidia\DLSS\Source"
-/I "D:\Projects\DRG modding\Unreal Projects\RudeMissionControlMod2\Plugins\Nvidia\DLSS\Source\DLSSBlueprint\Public"
+/I "D:\Projects\DRG modding\Github Projects\ShoutFramework\ShoutFrameworkProject\Plugins\Nvidia\DLSS\Source\DLSSBlueprint\Private"
+/I "D:\Projects\DRG modding\Github Projects\ShoutFramework\ShoutFrameworkProject\Plugins\Nvidia\DLSS\Intermediate\Build\Win64\UE4\Inc\DLSSBlueprint"
+/I "D:\Projects\DRG modding\Github Projects\ShoutFramework\ShoutFrameworkProject\Plugins\Nvidia\DLSS\Source"
+/I "D:\Projects\DRG modding\Github Projects\ShoutFramework\ShoutFrameworkProject\Plugins\Nvidia\DLSS\Source\DLSSBlueprint\Public"
 /I Runtime
 /I Runtime\TraceLog\Public
 /I Runtime\Core\Public
@@ -147,12 +147,12 @@
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"
-/FI"D:\Projects\DRG modding\Unreal Projects\RudeMissionControlMod2\Intermediate\Build\Win64\FSDGame\Shipping\Engine\SharedPCH.Engine.h"
-/Yu"D:\Projects\DRG modding\Unreal Projects\RudeMissionControlMod2\Intermediate\Build\Win64\FSDGame\Shipping\Engine\SharedPCH.Engine.h"
-/Fp"D:\Projects\DRG modding\Unreal Projects\RudeMissionControlMod2\Intermediate\Build\Win64\FSDGame\Shipping\Engine\SharedPCH.Engine.h.pch"
-"D:\Projects\DRG modding\Unreal Projects\RudeMissionControlMod2\Plugins\Nvidia\DLSS\Intermediate\Build\Win64\UE4\Shipping\DLSSBlueprint\Module.DLSSBlueprint.gen.cpp"
-/FI"D:\Projects\DRG modding\Unreal Projects\RudeMissionControlMod2\Plugins\Nvidia\DLSS\Intermediate\Build\Win64\UE4\Shipping\DLSSBlueprint\Definitions.DLSSBlueprint.h"
-/Fo"D:\Projects\DRG modding\Unreal Projects\RudeMissionControlMod2\Plugins\Nvidia\DLSS\Intermediate\Build\Win64\UE4\Shipping\DLSSBlueprint\Module.DLSSBlueprint.gen.cpp.obj"
+/FI"D:\Projects\DRG modding\Github Projects\ShoutFramework\ShoutFrameworkProject\Intermediate\Build\Win64\FSDGame\Shipping\Engine\SharedPCH.Engine.h"
+/Yu"D:\Projects\DRG modding\Github Projects\ShoutFramework\ShoutFrameworkProject\Intermediate\Build\Win64\FSDGame\Shipping\Engine\SharedPCH.Engine.h"
+/Fp"D:\Projects\DRG modding\Github Projects\ShoutFramework\ShoutFrameworkProject\Intermediate\Build\Win64\FSDGame\Shipping\Engine\SharedPCH.Engine.h.pch"
+"D:\Projects\DRG modding\Github Projects\ShoutFramework\ShoutFrameworkProject\Plugins\Nvidia\DLSS\Intermediate\Build\Win64\UE4\Shipping\DLSSBlueprint\Module.DLSSBlueprint.gen.cpp"
+/FI"D:\Projects\DRG modding\Github Projects\ShoutFramework\ShoutFrameworkProject\Plugins\Nvidia\DLSS\Intermediate\Build\Win64\UE4\Shipping\DLSSBlueprint\Definitions.DLSSBlueprint.h"
+/Fo"D:\Projects\DRG modding\Github Projects\ShoutFramework\ShoutFrameworkProject\Plugins\Nvidia\DLSS\Intermediate\Build\Win64\UE4\Shipping\DLSSBlueprint\Module.DLSSBlueprint.gen.cpp.obj"
 /TP
 /GR-
 /W4
