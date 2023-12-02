@@ -1,0 +1,13 @@
+D:\Projects\DRG modding\Github Projects\ShoutFramework\Plugins\Nvidia\FSDAnsel\Intermediate\Build\Win64\UE4\Shipping\FSDAnsel\Definitions.FSDAnsel.h
+D:/Projects/DRG modding/Github Projects/ShoutFramework/Plugins/Nvidia/FSDAnsel/Source/FSDAnsel/Private/FSDAnselFunctionLibrary.cpp
+D:\Projects\DRG modding\Github Projects\ShoutFramework\Plugins\Nvidia\FSDAnsel\Source\FSDAnsel\Public\FSDAnselFunctionLibrary.h
+D:\Programs\Epic Games\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UObject/NoExportTypes.h
+D:\Programs\Epic Games\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UObject/PropertyAccessUtil.h
+D:\Programs\Epic Games\UE_4.27\Engine\Source\Runtime\Core\Public\Math/UnitConversion.h
+D:\Programs\Epic Games\UE_4.27\Engine\Source\Runtime\Core\Public\Math/UnitConversion.inl
+D:\Programs\Epic Games\UE_4.27\Engine\Source\Runtime\Core\Public\Internationalization/PolyglotTextData.h
+D:\Programs\Epic Games\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\AssetRegistry/ARFilter.h
+D:\Projects\DRG modding\Github Projects\ShoutFramework\Plugins\Nvidia\FSDAnsel\Source\FSDAnsel\Public\EUIControlEffectTarget.h
+D:\Projects\DRG modding\Github Projects\ShoutFramework\Plugins\Nvidia\FSDAnsel\Intermediate\Build\Win64\UE4\Inc\FSDAnsel\EUIControlEffectTarget.generated.h
+D:\Projects\DRG modding\Github Projects\ShoutFramework\Plugins\Nvidia\FSDAnsel\Intermediate\Build\Win64\UE4\Inc\FSDAnsel\FSDAnselFunctionLibrary.generated.h
+D:/Projects/DRG modding/Github Projects/ShoutFramework/Plugins/Nvidia/FSDAnsel/Source/FSDAnsel/Private/FSDAnselModule.cpp
