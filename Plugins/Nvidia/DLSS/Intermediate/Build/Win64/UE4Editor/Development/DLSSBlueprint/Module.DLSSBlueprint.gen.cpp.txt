@@ -1,0 +1,19 @@
+D:\Projects\DRG modding\Github Projects\ShoutFramework\Plugins\Nvidia\DLSS\Intermediate\Build\Win64\UE4Editor\Development\DLSSBlueprint\Definitions.DLSSBlueprint.h
+D:/Projects/DRG modding/Github Projects/ShoutFramework/Plugins/Nvidia/DLSS/Intermediate/Build/Win64/UE4Editor/Inc/DLSSBlueprint/DLSSBlueprint.init.gen.cpp
+D:\Programs\Epic Games\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UObject/GeneratedCppIncludes.h
+D:\Programs\Epic Games\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UObject/MetaData.h
+D:/Projects/DRG modding/Github Projects/ShoutFramework/Plugins/Nvidia/DLSS/Intermediate/Build/Win64/UE4Editor/Inc/DLSSBlueprint/DLSSLibrary.gen.cpp
+D:\Projects\DRG modding\Github Projects\ShoutFramework\Plugins\Nvidia\DLSS\Source\DLSSBlueprint/Public/DLSSLibrary.h
+D:\Programs\Epic Games\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UObject/NoExportTypes.h
+D:\Programs\Epic Games\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UObject/PropertyAccessUtil.h
+D:\Programs\Epic Games\UE_4.27\Engine\Source\Runtime\Core\Public\Math/UnitConversion.h
+D:\Programs\Epic Games\UE_4.27\Engine\Source\Runtime\Core\Public\Math/UnitConversion.inl
+D:\Programs\Epic Games\UE_4.27\Engine\Source\Runtime\Core\Public\Internationalization/PolyglotTextData.h
+D:\Programs\Epic Games\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\AssetRegistry/ARFilter.h
+D:\Projects\DRG modding\Github Projects\ShoutFramework\Plugins\Nvidia\DLSS\Source\DLSSBlueprint\Public\UDLSSMode.h
+D:\Projects\DRG modding\Github Projects\ShoutFramework\Plugins\Nvidia\DLSS\Intermediate\Build\Win64\UE4Editor\Inc\DLSSBlueprint\UDLSSMode.generated.h
+D:\Projects\DRG modding\Github Projects\ShoutFramework\Plugins\Nvidia\DLSS\Source\DLSSBlueprint\Public\UDLSSSupport.h
+D:\Projects\DRG modding\Github Projects\ShoutFramework\Plugins\Nvidia\DLSS\Intermediate\Build\Win64\UE4Editor\Inc\DLSSBlueprint\UDLSSSupport.generated.h
+D:\Projects\DRG modding\Github Projects\ShoutFramework\Plugins\Nvidia\DLSS\Intermediate\Build\Win64\UE4Editor\Inc\DLSSBlueprint\DLSSLibrary.generated.h
+D:/Projects/DRG modding/Github Projects/ShoutFramework/Plugins/Nvidia/DLSS/Intermediate/Build/Win64/UE4Editor/Inc/DLSSBlueprint/UDLSSMode.gen.cpp
+D:/Projects/DRG modding/Github Projects/ShoutFramework/Plugins/Nvidia/DLSS/Intermediate/Build/Win64/UE4Editor/Inc/DLSSBlueprint/UDLSSSupport.gen.cpp

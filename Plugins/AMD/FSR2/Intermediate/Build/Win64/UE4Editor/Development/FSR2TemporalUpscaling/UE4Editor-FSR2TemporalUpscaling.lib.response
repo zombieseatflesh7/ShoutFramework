@@ -1,0 +1,13 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UE4Editor-FSR2TemporalUpscaling.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"D:\Projects\DRG modding\Github Projects\ShoutFramework\Intermediate\Build\Win64\FSDEditor\Development\Engine\SharedPCH.Engine.h.obj"
+"D:\Projects\DRG modding\Github Projects\ShoutFramework\Plugins\AMD\FSR2\Intermediate\Build\Win64\UE4Editor\Development\FSR2TemporalUpscaling\Module.FSR2TemporalUpscaling.cpp.obj"
+"D:\Projects\DRG modding\Github Projects\ShoutFramework\Plugins\AMD\FSR2\Intermediate\Build\Win64\UE4Editor\Development\FSR2TemporalUpscaling\Module.FSR2TemporalUpscaling.gen.cpp.obj"
+"D:\Projects\DRG modding\Github Projects\ShoutFramework\Plugins\AMD\FSR2\Intermediate\Build\Win64\UE4Editor\Development\FSR2TemporalUpscaling\Default.rc2.res"
+/OUT:"D:\Projects\DRG modding\Github Projects\ShoutFramework\Plugins\AMD\FSR2\Intermediate\Build\Win64\UE4Editor\Development\FSR2TemporalUpscaling\UE4Editor-FSR2TemporalUpscaling.lib"
