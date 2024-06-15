@@ -29,6 +29,22 @@ void EmptyLinkFunctionForGeneratedCodeDLSSLibrary() {}
 		UDLSSLibrary::EnableDLAA(Z_Param_bEnabled);
 		P_NATIVE_END;
 	}
+	DEFINE_FUNCTION(UDLSSLibrary::execEnableDLSS)
+	{
+		P_GET_UBOOL(Z_Param_bEnabled);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		UDLSSLibrary::EnableDLSS(Z_Param_bEnabled);
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(UDLSSLibrary::execEnableDLSSRR)
+	{
+		P_GET_UBOOL(Z_Param_bEnabled);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		UDLSSLibrary::EnableDLSSRR(Z_Param_bEnabled);
+		P_NATIVE_END;
+	}
 	DEFINE_FUNCTION(UDLSSLibrary::execGetDefaultDLSSMode)
 	{
 		P_FINISH;
@@ -67,6 +83,15 @@ void EmptyLinkFunctionForGeneratedCodeDLSSLibrary() {}
 		UDLSSLibrary::GetDLSSModeInformation(UDLSSMode(Z_Param_DLSSMode),Z_Param_ScreenResolution,Z_Param_Out_bIsSupported,Z_Param_Out_OptimalScreenPercentage,Z_Param_Out_bIsFixedScreenPercentage,Z_Param_Out_MinScreenPercentage,Z_Param_Out_MaxScreenPercentage,Z_Param_Out_OptimalSharpness);
 		P_NATIVE_END;
 	}
+	DEFINE_FUNCTION(UDLSSLibrary::execGetDLSSRRMinimumDriverVersion)
+	{
+		P_GET_PROPERTY_REF(FIntProperty,Z_Param_Out_MinDriverVersionMajor);
+		P_GET_PROPERTY_REF(FIntProperty,Z_Param_Out_MinDriverVersionMinor);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		UDLSSLibrary::GetDLSSRRMinimumDriverVersion(Z_Param_Out_MinDriverVersionMajor,Z_Param_Out_MinDriverVersionMinor);
+		P_NATIVE_END;
+	}
 	DEFINE_FUNCTION(UDLSSLibrary::execGetDLSSScreenPercentageRange)
 	{
 		P_GET_PROPERTY_REF(FFloatProperty,Z_Param_Out_MinScreenPercentage);
@@ -97,6 +122,13 @@ void EmptyLinkFunctionForGeneratedCodeDLSSLibrary() {}
 		*(bool*)Z_Param__Result=UDLSSLibrary::IsDLAAEnabled();
 		P_NATIVE_END;
 	}
+	DEFINE_FUNCTION(UDLSSLibrary::execIsDLSSEnabled)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		*(bool*)Z_Param__Result=UDLSSLibrary::IsDLSSEnabled();
+		P_NATIVE_END;
+	}
 	DEFINE_FUNCTION(UDLSSLibrary::execIsDLSSModeSupported)
 	{
 		P_GET_ENUM(UDLSSMode,Z_Param_DLSSMode);
@@ -105,11 +137,32 @@ void EmptyLinkFunctionForGeneratedCodeDLSSLibrary() {}
 		*(bool*)Z_Param__Result=UDLSSLibrary::IsDLSSModeSupported(UDLSSMode(Z_Param_DLSSMode));
 		P_NATIVE_END;
 	}
+	DEFINE_FUNCTION(UDLSSLibrary::execIsDLSSRREnabled)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		*(bool*)Z_Param__Result=UDLSSLibrary::IsDLSSRREnabled();
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(UDLSSLibrary::execIsDLSSRRSupported)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		*(bool*)Z_Param__Result=UDLSSLibrary::IsDLSSRRSupported();
+		P_NATIVE_END;
+	}
 	DEFINE_FUNCTION(UDLSSLibrary::execIsDLSSSupported)
 	{
 		P_FINISH;
 		P_NATIVE_BEGIN;
 		*(bool*)Z_Param__Result=UDLSSLibrary::IsDLSSSupported();
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(UDLSSLibrary::execQueryDLSSRRSupport)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		*(UDLSSSupport*)Z_Param__Result=UDLSSLibrary::QueryDLSSRRSupport();
 		P_NATIVE_END;
 	}
 	DEFINE_FUNCTION(UDLSSLibrary::execQueryDLSSSupport)
@@ -140,16 +193,23 @@ void EmptyLinkFunctionForGeneratedCodeDLSSLibrary() {}
 		UClass* Class = UDLSSLibrary::StaticClass();
 		static const FNameNativePtrPair Funcs[] = {
 			{ "EnableDLAA", &UDLSSLibrary::execEnableDLAA },
+			{ "EnableDLSS", &UDLSSLibrary::execEnableDLSS },
+			{ "EnableDLSSRR", &UDLSSLibrary::execEnableDLSSRR },
 			{ "GetDefaultDLSSMode", &UDLSSLibrary::execGetDefaultDLSSMode },
 			{ "GetDLSSMinimumDriverVersion", &UDLSSLibrary::execGetDLSSMinimumDriverVersion },
 			{ "GetDLSSMode", &UDLSSLibrary::execGetDLSSMode },
 			{ "GetDLSSModeInformation", &UDLSSLibrary::execGetDLSSModeInformation },
+			{ "GetDLSSRRMinimumDriverVersion", &UDLSSLibrary::execGetDLSSRRMinimumDriverVersion },
 			{ "GetDLSSScreenPercentageRange", &UDLSSLibrary::execGetDLSSScreenPercentageRange },
 			{ "GetDLSSSharpness", &UDLSSLibrary::execGetDLSSSharpness },
 			{ "GetSupportedDLSSModes", &UDLSSLibrary::execGetSupportedDLSSModes },
 			{ "IsDLAAEnabled", &UDLSSLibrary::execIsDLAAEnabled },
+			{ "IsDLSSEnabled", &UDLSSLibrary::execIsDLSSEnabled },
 			{ "IsDLSSModeSupported", &UDLSSLibrary::execIsDLSSModeSupported },
+			{ "IsDLSSRREnabled", &UDLSSLibrary::execIsDLSSRREnabled },
+			{ "IsDLSSRRSupported", &UDLSSLibrary::execIsDLSSRRSupported },
 			{ "IsDLSSSupported", &UDLSSLibrary::execIsDLSSSupported },
+			{ "QueryDLSSRRSupport", &UDLSSLibrary::execQueryDLSSRRSupport },
 			{ "QueryDLSSSupport", &UDLSSLibrary::execQueryDLSSSupport },
 			{ "SetDLSSMode", &UDLSSLibrary::execSetDLSSMode },
 			{ "SetDLSSSharpness", &UDLSSLibrary::execSetDLSSSharpness },
@@ -190,6 +250,80 @@ void EmptyLinkFunctionForGeneratedCodeDLSSLibrary() {}
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UDLSSLibrary_EnableDLAA_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UDLSSLibrary_EnableDLSS_Statics
+	{
+		struct DLSSLibrary_eventEnableDLSS_Parms
+		{
+			bool bEnabled;
+		};
+		static void NewProp_bEnabled_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_bEnabled;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	void Z_Construct_UFunction_UDLSSLibrary_EnableDLSS_Statics::NewProp_bEnabled_SetBit(void* Obj)
+	{
+		((DLSSLibrary_eventEnableDLSS_Parms*)Obj)->bEnabled = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UDLSSLibrary_EnableDLSS_Statics::NewProp_bEnabled = { "bEnabled", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(DLSSLibrary_eventEnableDLSS_Parms), &Z_Construct_UFunction_UDLSSLibrary_EnableDLSS_Statics::NewProp_bEnabled_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UDLSSLibrary_EnableDLSS_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UDLSSLibrary_EnableDLSS_Statics::NewProp_bEnabled,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UDLSSLibrary_EnableDLSS_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/DLSSLibrary.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UDLSSLibrary_EnableDLSS_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UDLSSLibrary, nullptr, "EnableDLSS", nullptr, nullptr, sizeof(DLSSLibrary_eventEnableDLSS_Parms), Z_Construct_UFunction_UDLSSLibrary_EnableDLSS_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UDLSSLibrary_EnableDLSS_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UDLSSLibrary_EnableDLSS_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UDLSSLibrary_EnableDLSS_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UDLSSLibrary_EnableDLSS()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UDLSSLibrary_EnableDLSS_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UDLSSLibrary_EnableDLSSRR_Statics
+	{
+		struct DLSSLibrary_eventEnableDLSSRR_Parms
+		{
+			bool bEnabled;
+		};
+		static void NewProp_bEnabled_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_bEnabled;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	void Z_Construct_UFunction_UDLSSLibrary_EnableDLSSRR_Statics::NewProp_bEnabled_SetBit(void* Obj)
+	{
+		((DLSSLibrary_eventEnableDLSSRR_Parms*)Obj)->bEnabled = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UDLSSLibrary_EnableDLSSRR_Statics::NewProp_bEnabled = { "bEnabled", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(DLSSLibrary_eventEnableDLSSRR_Parms), &Z_Construct_UFunction_UDLSSLibrary_EnableDLSSRR_Statics::NewProp_bEnabled_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UDLSSLibrary_EnableDLSSRR_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UDLSSLibrary_EnableDLSSRR_Statics::NewProp_bEnabled,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UDLSSLibrary_EnableDLSSRR_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/DLSSLibrary.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UDLSSLibrary_EnableDLSSRR_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UDLSSLibrary, nullptr, "EnableDLSSRR", nullptr, nullptr, sizeof(DLSSLibrary_eventEnableDLSSRR_Parms), Z_Construct_UFunction_UDLSSLibrary_EnableDLSSRR_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UDLSSLibrary_EnableDLSSRR_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UDLSSLibrary_EnableDLSSRR_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UDLSSLibrary_EnableDLSSRR_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UDLSSLibrary_EnableDLSSRR()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UDLSSLibrary_EnableDLSSRR_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -372,6 +506,42 @@ void EmptyLinkFunctionForGeneratedCodeDLSSLibrary() {}
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_UDLSSLibrary_GetDLSSRRMinimumDriverVersion_Statics
+	{
+		struct DLSSLibrary_eventGetDLSSRRMinimumDriverVersion_Parms
+		{
+			int32 MinDriverVersionMajor;
+			int32 MinDriverVersionMinor;
+		};
+		static const UE4CodeGen_Private::FIntPropertyParams NewProp_MinDriverVersionMajor;
+		static const UE4CodeGen_Private::FIntPropertyParams NewProp_MinDriverVersionMinor;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UDLSSLibrary_GetDLSSRRMinimumDriverVersion_Statics::NewProp_MinDriverVersionMajor = { "MinDriverVersionMajor", nullptr, (EPropertyFlags)0x0010000000000180, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(DLSSLibrary_eventGetDLSSRRMinimumDriverVersion_Parms, MinDriverVersionMajor), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UDLSSLibrary_GetDLSSRRMinimumDriverVersion_Statics::NewProp_MinDriverVersionMinor = { "MinDriverVersionMinor", nullptr, (EPropertyFlags)0x0010000000000180, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(DLSSLibrary_eventGetDLSSRRMinimumDriverVersion_Parms, MinDriverVersionMinor), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UDLSSLibrary_GetDLSSRRMinimumDriverVersion_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UDLSSLibrary_GetDLSSRRMinimumDriverVersion_Statics::NewProp_MinDriverVersionMajor,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UDLSSLibrary_GetDLSSRRMinimumDriverVersion_Statics::NewProp_MinDriverVersionMinor,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UDLSSLibrary_GetDLSSRRMinimumDriverVersion_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/DLSSLibrary.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UDLSSLibrary_GetDLSSRRMinimumDriverVersion_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UDLSSLibrary, nullptr, "GetDLSSRRMinimumDriverVersion", nullptr, nullptr, sizeof(DLSSLibrary_eventGetDLSSRRMinimumDriverVersion_Parms), Z_Construct_UFunction_UDLSSLibrary_GetDLSSRRMinimumDriverVersion_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UDLSSLibrary_GetDLSSRRMinimumDriverVersion_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14422401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UDLSSLibrary_GetDLSSRRMinimumDriverVersion_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UDLSSLibrary_GetDLSSRRMinimumDriverVersion_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UDLSSLibrary_GetDLSSRRMinimumDriverVersion()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UDLSSLibrary_GetDLSSRRMinimumDriverVersion_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	struct Z_Construct_UFunction_UDLSSLibrary_GetDLSSScreenPercentageRange_Statics
 	{
 		struct DLSSLibrary_eventGetDLSSScreenPercentageRange_Parms
@@ -515,6 +685,43 @@ void EmptyLinkFunctionForGeneratedCodeDLSSLibrary() {}
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_UDLSSLibrary_IsDLSSEnabled_Statics
+	{
+		struct DLSSLibrary_eventIsDLSSEnabled_Parms
+		{
+			bool ReturnValue;
+		};
+		static void NewProp_ReturnValue_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	void Z_Construct_UFunction_UDLSSLibrary_IsDLSSEnabled_Statics::NewProp_ReturnValue_SetBit(void* Obj)
+	{
+		((DLSSLibrary_eventIsDLSSEnabled_Parms*)Obj)->ReturnValue = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UDLSSLibrary_IsDLSSEnabled_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(DLSSLibrary_eventIsDLSSEnabled_Parms), &Z_Construct_UFunction_UDLSSLibrary_IsDLSSEnabled_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UDLSSLibrary_IsDLSSEnabled_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UDLSSLibrary_IsDLSSEnabled_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UDLSSLibrary_IsDLSSEnabled_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/DLSSLibrary.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UDLSSLibrary_IsDLSSEnabled_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UDLSSLibrary, nullptr, "IsDLSSEnabled", nullptr, nullptr, sizeof(DLSSLibrary_eventIsDLSSEnabled_Parms), Z_Construct_UFunction_UDLSSLibrary_IsDLSSEnabled_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UDLSSLibrary_IsDLSSEnabled_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UDLSSLibrary_IsDLSSEnabled_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UDLSSLibrary_IsDLSSEnabled_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UDLSSLibrary_IsDLSSEnabled()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UDLSSLibrary_IsDLSSEnabled_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	struct Z_Construct_UFunction_UDLSSLibrary_IsDLSSModeSupported_Statics
 	{
 		struct DLSSLibrary_eventIsDLSSModeSupported_Parms
@@ -559,6 +766,80 @@ void EmptyLinkFunctionForGeneratedCodeDLSSLibrary() {}
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_UDLSSLibrary_IsDLSSRREnabled_Statics
+	{
+		struct DLSSLibrary_eventIsDLSSRREnabled_Parms
+		{
+			bool ReturnValue;
+		};
+		static void NewProp_ReturnValue_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	void Z_Construct_UFunction_UDLSSLibrary_IsDLSSRREnabled_Statics::NewProp_ReturnValue_SetBit(void* Obj)
+	{
+		((DLSSLibrary_eventIsDLSSRREnabled_Parms*)Obj)->ReturnValue = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UDLSSLibrary_IsDLSSRREnabled_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(DLSSLibrary_eventIsDLSSRREnabled_Parms), &Z_Construct_UFunction_UDLSSLibrary_IsDLSSRREnabled_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UDLSSLibrary_IsDLSSRREnabled_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UDLSSLibrary_IsDLSSRREnabled_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UDLSSLibrary_IsDLSSRREnabled_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/DLSSLibrary.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UDLSSLibrary_IsDLSSRREnabled_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UDLSSLibrary, nullptr, "IsDLSSRREnabled", nullptr, nullptr, sizeof(DLSSLibrary_eventIsDLSSRREnabled_Parms), Z_Construct_UFunction_UDLSSLibrary_IsDLSSRREnabled_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UDLSSLibrary_IsDLSSRREnabled_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UDLSSLibrary_IsDLSSRREnabled_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UDLSSLibrary_IsDLSSRREnabled_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UDLSSLibrary_IsDLSSRREnabled()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UDLSSLibrary_IsDLSSRREnabled_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UDLSSLibrary_IsDLSSRRSupported_Statics
+	{
+		struct DLSSLibrary_eventIsDLSSRRSupported_Parms
+		{
+			bool ReturnValue;
+		};
+		static void NewProp_ReturnValue_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	void Z_Construct_UFunction_UDLSSLibrary_IsDLSSRRSupported_Statics::NewProp_ReturnValue_SetBit(void* Obj)
+	{
+		((DLSSLibrary_eventIsDLSSRRSupported_Parms*)Obj)->ReturnValue = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UDLSSLibrary_IsDLSSRRSupported_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(DLSSLibrary_eventIsDLSSRRSupported_Parms), &Z_Construct_UFunction_UDLSSLibrary_IsDLSSRRSupported_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UDLSSLibrary_IsDLSSRRSupported_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UDLSSLibrary_IsDLSSRRSupported_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UDLSSLibrary_IsDLSSRRSupported_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/DLSSLibrary.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UDLSSLibrary_IsDLSSRRSupported_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UDLSSLibrary, nullptr, "IsDLSSRRSupported", nullptr, nullptr, sizeof(DLSSLibrary_eventIsDLSSRRSupported_Parms), Z_Construct_UFunction_UDLSSLibrary_IsDLSSRRSupported_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UDLSSLibrary_IsDLSSRRSupported_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UDLSSLibrary_IsDLSSRRSupported_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UDLSSLibrary_IsDLSSRRSupported_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UDLSSLibrary_IsDLSSRRSupported()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UDLSSLibrary_IsDLSSRRSupported_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	struct Z_Construct_UFunction_UDLSSLibrary_IsDLSSSupported_Statics
 	{
 		struct DLSSLibrary_eventIsDLSSSupported_Parms
@@ -593,6 +874,41 @@ void EmptyLinkFunctionForGeneratedCodeDLSSLibrary() {}
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UDLSSLibrary_IsDLSSSupported_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UDLSSLibrary_QueryDLSSRRSupport_Statics
+	{
+		struct DLSSLibrary_eventQueryDLSSRRSupport_Parms
+		{
+			UDLSSSupport ReturnValue;
+		};
+		static const UE4CodeGen_Private::FBytePropertyParams NewProp_ReturnValue_Underlying;
+		static const UE4CodeGen_Private::FEnumPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UDLSSLibrary_QueryDLSSRRSupport_Statics::NewProp_ReturnValue_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UDLSSLibrary_QueryDLSSRRSupport_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(DLSSLibrary_eventQueryDLSSRRSupport_Parms, ReturnValue), Z_Construct_UEnum_DLSSBlueprint_UDLSSSupport, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UDLSSLibrary_QueryDLSSRRSupport_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UDLSSLibrary_QueryDLSSRRSupport_Statics::NewProp_ReturnValue_Underlying,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UDLSSLibrary_QueryDLSSRRSupport_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UDLSSLibrary_QueryDLSSRRSupport_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/DLSSLibrary.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UDLSSLibrary_QueryDLSSRRSupport_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UDLSSLibrary, nullptr, "QueryDLSSRRSupport", nullptr, nullptr, sizeof(DLSSLibrary_eventQueryDLSSRRSupport_Parms), Z_Construct_UFunction_UDLSSLibrary_QueryDLSSRRSupport_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UDLSSLibrary_QueryDLSSRRSupport_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UDLSSLibrary_QueryDLSSRRSupport_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UDLSSLibrary_QueryDLSSRRSupport_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UDLSSLibrary_QueryDLSSRRSupport()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UDLSSLibrary_QueryDLSSRRSupport_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -718,16 +1034,23 @@ void EmptyLinkFunctionForGeneratedCodeDLSSLibrary() {}
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UDLSSLibrary_Statics::FuncInfo[] = {
 		{ &Z_Construct_UFunction_UDLSSLibrary_EnableDLAA, "EnableDLAA" }, // 519070389
+		{ &Z_Construct_UFunction_UDLSSLibrary_EnableDLSS, "EnableDLSS" }, // 2798653174
+		{ &Z_Construct_UFunction_UDLSSLibrary_EnableDLSSRR, "EnableDLSSRR" }, // 3362187943
 		{ &Z_Construct_UFunction_UDLSSLibrary_GetDefaultDLSSMode, "GetDefaultDLSSMode" }, // 3872527018
 		{ &Z_Construct_UFunction_UDLSSLibrary_GetDLSSMinimumDriverVersion, "GetDLSSMinimumDriverVersion" }, // 4127143009
 		{ &Z_Construct_UFunction_UDLSSLibrary_GetDLSSMode, "GetDLSSMode" }, // 3796258090
 		{ &Z_Construct_UFunction_UDLSSLibrary_GetDLSSModeInformation, "GetDLSSModeInformation" }, // 3982732404
+		{ &Z_Construct_UFunction_UDLSSLibrary_GetDLSSRRMinimumDriverVersion, "GetDLSSRRMinimumDriverVersion" }, // 2208394482
 		{ &Z_Construct_UFunction_UDLSSLibrary_GetDLSSScreenPercentageRange, "GetDLSSScreenPercentageRange" }, // 793683173
 		{ &Z_Construct_UFunction_UDLSSLibrary_GetDLSSSharpness, "GetDLSSSharpness" }, // 410739415
 		{ &Z_Construct_UFunction_UDLSSLibrary_GetSupportedDLSSModes, "GetSupportedDLSSModes" }, // 1284058695
 		{ &Z_Construct_UFunction_UDLSSLibrary_IsDLAAEnabled, "IsDLAAEnabled" }, // 3277167740
+		{ &Z_Construct_UFunction_UDLSSLibrary_IsDLSSEnabled, "IsDLSSEnabled" }, // 3254490263
 		{ &Z_Construct_UFunction_UDLSSLibrary_IsDLSSModeSupported, "IsDLSSModeSupported" }, // 1320957051
+		{ &Z_Construct_UFunction_UDLSSLibrary_IsDLSSRREnabled, "IsDLSSRREnabled" }, // 3652359012
+		{ &Z_Construct_UFunction_UDLSSLibrary_IsDLSSRRSupported, "IsDLSSRRSupported" }, // 1971641874
 		{ &Z_Construct_UFunction_UDLSSLibrary_IsDLSSSupported, "IsDLSSSupported" }, // 875098358
+		{ &Z_Construct_UFunction_UDLSSLibrary_QueryDLSSRRSupport, "QueryDLSSRRSupport" }, // 1696942005
 		{ &Z_Construct_UFunction_UDLSSLibrary_QueryDLSSSupport, "QueryDLSSSupport" }, // 773947983
 		{ &Z_Construct_UFunction_UDLSSLibrary_SetDLSSMode, "SetDLSSMode" }, // 938588353
 		{ &Z_Construct_UFunction_UDLSSLibrary_SetDLSSSharpness, "SetDLSSSharpness" }, // 660672678
@@ -767,7 +1090,7 @@ void EmptyLinkFunctionForGeneratedCodeDLSSLibrary() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UDLSSLibrary, 217452019);
+	IMPLEMENT_CLASS(UDLSSLibrary, 1047387409);
 	template<> DLSSBLUEPRINT_API UClass* StaticClass<UDLSSLibrary>()
 	{
 		return UDLSSLibrary::StaticClass();

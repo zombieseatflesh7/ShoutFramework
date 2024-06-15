@@ -16,44 +16,58 @@ enum class UDLSSSupport : uint8;
 #endif
 #define DLSSBLUEPRINT_DLSSLibrary_generated_h
 
-#define ShoutFramework_Plugins_Nvidia_DLSS_Source_DLSSBlueprint_Public_DLSSLibrary_h_11_SPARSE_DATA
-#define ShoutFramework_Plugins_Nvidia_DLSS_Source_DLSSBlueprint_Public_DLSSLibrary_h_11_RPC_WRAPPERS \
+#define Template_Plugins_Nvidia_DLSS_Source_DLSSBlueprint_Public_DLSSLibrary_h_11_SPARSE_DATA
+#define Template_Plugins_Nvidia_DLSS_Source_DLSSBlueprint_Public_DLSSLibrary_h_11_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execEnableDLAA); \
+	DECLARE_FUNCTION(execEnableDLSS); \
+	DECLARE_FUNCTION(execEnableDLSSRR); \
 	DECLARE_FUNCTION(execGetDefaultDLSSMode); \
 	DECLARE_FUNCTION(execGetDLSSMinimumDriverVersion); \
 	DECLARE_FUNCTION(execGetDLSSMode); \
 	DECLARE_FUNCTION(execGetDLSSModeInformation); \
+	DECLARE_FUNCTION(execGetDLSSRRMinimumDriverVersion); \
 	DECLARE_FUNCTION(execGetDLSSScreenPercentageRange); \
 	DECLARE_FUNCTION(execGetDLSSSharpness); \
 	DECLARE_FUNCTION(execGetSupportedDLSSModes); \
 	DECLARE_FUNCTION(execIsDLAAEnabled); \
+	DECLARE_FUNCTION(execIsDLSSEnabled); \
 	DECLARE_FUNCTION(execIsDLSSModeSupported); \
+	DECLARE_FUNCTION(execIsDLSSRREnabled); \
+	DECLARE_FUNCTION(execIsDLSSRRSupported); \
 	DECLARE_FUNCTION(execIsDLSSSupported); \
+	DECLARE_FUNCTION(execQueryDLSSRRSupport); \
 	DECLARE_FUNCTION(execQueryDLSSSupport); \
 	DECLARE_FUNCTION(execSetDLSSMode); \
 	DECLARE_FUNCTION(execSetDLSSSharpness);
 
 
-#define ShoutFramework_Plugins_Nvidia_DLSS_Source_DLSSBlueprint_Public_DLSSLibrary_h_11_RPC_WRAPPERS_NO_PURE_DECLS \
+#define Template_Plugins_Nvidia_DLSS_Source_DLSSBlueprint_Public_DLSSLibrary_h_11_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execEnableDLAA); \
+	DECLARE_FUNCTION(execEnableDLSS); \
+	DECLARE_FUNCTION(execEnableDLSSRR); \
 	DECLARE_FUNCTION(execGetDefaultDLSSMode); \
 	DECLARE_FUNCTION(execGetDLSSMinimumDriverVersion); \
 	DECLARE_FUNCTION(execGetDLSSMode); \
 	DECLARE_FUNCTION(execGetDLSSModeInformation); \
+	DECLARE_FUNCTION(execGetDLSSRRMinimumDriverVersion); \
 	DECLARE_FUNCTION(execGetDLSSScreenPercentageRange); \
 	DECLARE_FUNCTION(execGetDLSSSharpness); \
 	DECLARE_FUNCTION(execGetSupportedDLSSModes); \
 	DECLARE_FUNCTION(execIsDLAAEnabled); \
+	DECLARE_FUNCTION(execIsDLSSEnabled); \
 	DECLARE_FUNCTION(execIsDLSSModeSupported); \
+	DECLARE_FUNCTION(execIsDLSSRREnabled); \
+	DECLARE_FUNCTION(execIsDLSSRRSupported); \
 	DECLARE_FUNCTION(execIsDLSSSupported); \
+	DECLARE_FUNCTION(execQueryDLSSRRSupport); \
 	DECLARE_FUNCTION(execQueryDLSSSupport); \
 	DECLARE_FUNCTION(execSetDLSSMode); \
 	DECLARE_FUNCTION(execSetDLSSSharpness);
 
 
-#define ShoutFramework_Plugins_Nvidia_DLSS_Source_DLSSBlueprint_Public_DLSSLibrary_h_11_INCLASS_NO_PURE_DECLS \
+#define Template_Plugins_Nvidia_DLSS_Source_DLSSBlueprint_Public_DLSSLibrary_h_11_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUDLSSLibrary(); \
 	friend struct Z_Construct_UClass_UDLSSLibrary_Statics; \
@@ -62,7 +76,7 @@ public: \
 	DECLARE_SERIALIZER(UDLSSLibrary)
 
 
-#define ShoutFramework_Plugins_Nvidia_DLSS_Source_DLSSBlueprint_Public_DLSSLibrary_h_11_INCLASS \
+#define Template_Plugins_Nvidia_DLSS_Source_DLSSBlueprint_Public_DLSSLibrary_h_11_INCLASS \
 private: \
 	static void StaticRegisterNativesUDLSSLibrary(); \
 	friend struct Z_Construct_UClass_UDLSSLibrary_Statics; \
@@ -71,7 +85,7 @@ public: \
 	DECLARE_SERIALIZER(UDLSSLibrary)
 
 
-#define ShoutFramework_Plugins_Nvidia_DLSS_Source_DLSSBlueprint_Public_DLSSLibrary_h_11_STANDARD_CONSTRUCTORS \
+#define Template_Plugins_Nvidia_DLSS_Source_DLSSBlueprint_Public_DLSSLibrary_h_11_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	DLSSBLUEPRINT_API UDLSSLibrary(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UDLSSLibrary) \
@@ -84,7 +98,7 @@ private: \
 public:
 
 
-#define ShoutFramework_Plugins_Nvidia_DLSS_Source_DLSSBlueprint_Public_DLSSLibrary_h_11_ENHANCED_CONSTRUCTORS \
+#define Template_Plugins_Nvidia_DLSS_Source_DLSSBlueprint_Public_DLSSLibrary_h_11_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	DLSSBLUEPRINT_API UDLSSLibrary(UDLSSLibrary&&); \
@@ -95,28 +109,28 @@ public: \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(UDLSSLibrary)
 
 
-#define ShoutFramework_Plugins_Nvidia_DLSS_Source_DLSSBlueprint_Public_DLSSLibrary_h_11_PRIVATE_PROPERTY_OFFSET
-#define ShoutFramework_Plugins_Nvidia_DLSS_Source_DLSSBlueprint_Public_DLSSLibrary_h_9_PROLOG
-#define ShoutFramework_Plugins_Nvidia_DLSS_Source_DLSSBlueprint_Public_DLSSLibrary_h_11_GENERATED_BODY_LEGACY \
+#define Template_Plugins_Nvidia_DLSS_Source_DLSSBlueprint_Public_DLSSLibrary_h_11_PRIVATE_PROPERTY_OFFSET
+#define Template_Plugins_Nvidia_DLSS_Source_DLSSBlueprint_Public_DLSSLibrary_h_9_PROLOG
+#define Template_Plugins_Nvidia_DLSS_Source_DLSSBlueprint_Public_DLSSLibrary_h_11_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	ShoutFramework_Plugins_Nvidia_DLSS_Source_DLSSBlueprint_Public_DLSSLibrary_h_11_PRIVATE_PROPERTY_OFFSET \
-	ShoutFramework_Plugins_Nvidia_DLSS_Source_DLSSBlueprint_Public_DLSSLibrary_h_11_SPARSE_DATA \
-	ShoutFramework_Plugins_Nvidia_DLSS_Source_DLSSBlueprint_Public_DLSSLibrary_h_11_RPC_WRAPPERS \
-	ShoutFramework_Plugins_Nvidia_DLSS_Source_DLSSBlueprint_Public_DLSSLibrary_h_11_INCLASS \
-	ShoutFramework_Plugins_Nvidia_DLSS_Source_DLSSBlueprint_Public_DLSSLibrary_h_11_STANDARD_CONSTRUCTORS \
+	Template_Plugins_Nvidia_DLSS_Source_DLSSBlueprint_Public_DLSSLibrary_h_11_PRIVATE_PROPERTY_OFFSET \
+	Template_Plugins_Nvidia_DLSS_Source_DLSSBlueprint_Public_DLSSLibrary_h_11_SPARSE_DATA \
+	Template_Plugins_Nvidia_DLSS_Source_DLSSBlueprint_Public_DLSSLibrary_h_11_RPC_WRAPPERS \
+	Template_Plugins_Nvidia_DLSS_Source_DLSSBlueprint_Public_DLSSLibrary_h_11_INCLASS \
+	Template_Plugins_Nvidia_DLSS_Source_DLSSBlueprint_Public_DLSSLibrary_h_11_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define ShoutFramework_Plugins_Nvidia_DLSS_Source_DLSSBlueprint_Public_DLSSLibrary_h_11_GENERATED_BODY \
+#define Template_Plugins_Nvidia_DLSS_Source_DLSSBlueprint_Public_DLSSLibrary_h_11_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	ShoutFramework_Plugins_Nvidia_DLSS_Source_DLSSBlueprint_Public_DLSSLibrary_h_11_PRIVATE_PROPERTY_OFFSET \
-	ShoutFramework_Plugins_Nvidia_DLSS_Source_DLSSBlueprint_Public_DLSSLibrary_h_11_SPARSE_DATA \
-	ShoutFramework_Plugins_Nvidia_DLSS_Source_DLSSBlueprint_Public_DLSSLibrary_h_11_RPC_WRAPPERS_NO_PURE_DECLS \
-	ShoutFramework_Plugins_Nvidia_DLSS_Source_DLSSBlueprint_Public_DLSSLibrary_h_11_INCLASS_NO_PURE_DECLS \
-	ShoutFramework_Plugins_Nvidia_DLSS_Source_DLSSBlueprint_Public_DLSSLibrary_h_11_ENHANCED_CONSTRUCTORS \
+	Template_Plugins_Nvidia_DLSS_Source_DLSSBlueprint_Public_DLSSLibrary_h_11_PRIVATE_PROPERTY_OFFSET \
+	Template_Plugins_Nvidia_DLSS_Source_DLSSBlueprint_Public_DLSSLibrary_h_11_SPARSE_DATA \
+	Template_Plugins_Nvidia_DLSS_Source_DLSSBlueprint_Public_DLSSLibrary_h_11_RPC_WRAPPERS_NO_PURE_DECLS \
+	Template_Plugins_Nvidia_DLSS_Source_DLSSBlueprint_Public_DLSSLibrary_h_11_INCLASS_NO_PURE_DECLS \
+	Template_Plugins_Nvidia_DLSS_Source_DLSSBlueprint_Public_DLSSLibrary_h_11_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -124,7 +138,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 template<> DLSSBLUEPRINT_API UClass* StaticClass<class UDLSSLibrary>();
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID ShoutFramework_Plugins_Nvidia_DLSS_Source_DLSSBlueprint_Public_DLSSLibrary_h
+#define CURRENT_FILE_ID Template_Plugins_Nvidia_DLSS_Source_DLSSBlueprint_Public_DLSSLibrary_h
 
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

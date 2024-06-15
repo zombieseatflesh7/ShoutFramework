@@ -29,10 +29,10 @@
 /wd4244
 /wd4838
 /I .
-/I "D:\Projects\DRG modding\Github Projects\ShoutFramework\Plugins\Nvidia\DLSS\Source\DLSSBlueprint\Private"
-/I "D:\Projects\DRG modding\Github Projects\ShoutFramework\Plugins\Nvidia\DLSS\Intermediate\Build\Win64\UE4Editor\Inc\DLSSBlueprint"
-/I "D:\Projects\DRG modding\Github Projects\ShoutFramework\Plugins\Nvidia\DLSS\Source"
-/I "D:\Projects\DRG modding\Github Projects\ShoutFramework\Plugins\Nvidia\DLSS\Source\DLSSBlueprint\Public"
+/I "D:\Projects\DRG modding\Project Generator\Template\Plugins\Nvidia\DLSS\Source\DLSSBlueprint\Private"
+/I "D:\Projects\DRG modding\Project Generator\Template\Plugins\Nvidia\DLSS\Intermediate\Build\Win64\UE4Editor\Inc\DLSSBlueprint"
+/I "D:\Projects\DRG modding\Project Generator\Template\Plugins\Nvidia\DLSS\Source"
+/I "D:\Projects\DRG modding\Project Generator\Template\Plugins\Nvidia\DLSS\Source\DLSSBlueprint\Public"
 /I Runtime
 /I Runtime\TraceLog\Public
 /I Runtime\Core\Public
@@ -261,12 +261,12 @@
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.22621.0\shared"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.22621.0\um"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.22621.0\winrt"
-/FI"D:\Projects\DRG modding\Github Projects\ShoutFramework\Intermediate\Build\Win64\FSDEditor\Development\Engine\SharedPCH.Engine.h"
-/Yu"D:\Projects\DRG modding\Github Projects\ShoutFramework\Intermediate\Build\Win64\FSDEditor\Development\Engine\SharedPCH.Engine.h"
-/Fp"D:\Projects\DRG modding\Github Projects\ShoutFramework\Intermediate\Build\Win64\FSDEditor\Development\Engine\SharedPCH.Engine.h.pch"
-"D:\Projects\DRG modding\Github Projects\ShoutFramework\Plugins\Nvidia\DLSS\Intermediate\Build\Win64\UE4Editor\Development\DLSSBlueprint\Module.DLSSBlueprint.cpp"
-/FI"D:\Projects\DRG modding\Github Projects\ShoutFramework\Plugins\Nvidia\DLSS\Intermediate\Build\Win64\UE4Editor\Development\DLSSBlueprint\Definitions.DLSSBlueprint.h"
-/Fo"D:\Projects\DRG modding\Github Projects\ShoutFramework\Plugins\Nvidia\DLSS\Intermediate\Build\Win64\UE4Editor\Development\DLSSBlueprint\Module.DLSSBlueprint.cpp.obj"
+/FI"D:\Projects\DRG modding\Project Generator\Template\Intermediate\Build\Win64\FSDEditor\Development\Engine\SharedPCH.Engine.h"
+/Yu"D:\Projects\DRG modding\Project Generator\Template\Intermediate\Build\Win64\FSDEditor\Development\Engine\SharedPCH.Engine.h"
+/Fp"D:\Projects\DRG modding\Project Generator\Template\Intermediate\Build\Win64\FSDEditor\Development\Engine\SharedPCH.Engine.h.pch"
+"D:\Projects\DRG modding\Project Generator\Template\Plugins\Nvidia\DLSS\Intermediate\Build\Win64\UE4Editor\Development\DLSSBlueprint\Module.DLSSBlueprint.cpp"
+/FI"D:\Projects\DRG modding\Project Generator\Template\Plugins\Nvidia\DLSS\Intermediate\Build\Win64\UE4Editor\Development\DLSSBlueprint\Definitions.DLSSBlueprint.h"
+/Fo"D:\Projects\DRG modding\Project Generator\Template\Plugins\Nvidia\DLSS\Intermediate\Build\Win64\UE4Editor\Development\DLSSBlueprint\Module.DLSSBlueprint.cpp.obj"
 /TP
 /GR-
 /W4

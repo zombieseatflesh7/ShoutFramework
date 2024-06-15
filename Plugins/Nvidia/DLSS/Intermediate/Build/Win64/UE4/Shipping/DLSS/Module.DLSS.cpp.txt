@@ -7,4 +7,6 @@ D:\Projects\DRG modding\Github Projects\ShoutFramework\Plugins\Nvidia\DLSS\Inter
 D:\Projects\DRG modding\Github Projects\ShoutFramework\Plugins\Nvidia\DLSS\Intermediate\Build\Win64\UE4\Inc\DLSS\DLSSOverrideSettings.generated.h
 D:/Projects/DRG modding/Github Projects/ShoutFramework/Plugins/Nvidia/DLSS/Source/DLSS/Private/DLSSSettings.cpp
 D:\Projects\DRG modding\Github Projects\ShoutFramework\Plugins\Nvidia\DLSS\Source\DLSS\Public\DLSSSettings.h
+D:\Projects\DRG modding\Github Projects\ShoutFramework\Plugins\Nvidia\DLSS\Source\DLSS\Public\EDLSSPreset.h
+D:\Projects\DRG modding\Github Projects\ShoutFramework\Plugins\Nvidia\DLSS\Intermediate\Build\Win64\UE4\Inc\DLSS\EDLSSPreset.generated.h
 D:\Projects\DRG modding\Github Projects\ShoutFramework\Plugins\Nvidia\DLSS\Intermediate\Build\Win64\UE4\Inc\DLSS\DLSSSettings.generated.h

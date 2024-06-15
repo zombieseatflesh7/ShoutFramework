@@ -1,13 +1,13 @@
-D:\Projects\DRG modding\Github Projects\ShoutFramework\Plugins\AMD\FSR2\Intermediate\Build\Win64\UE4Editor\Development\FSR2TemporalUpscaling\Definitions.FSR2TemporalUpscaling.h
-D:/Projects/DRG modding/Github Projects/ShoutFramework/Plugins/AMD/FSR2/Intermediate/Build/Win64/UE4Editor/Inc/FSR2TemporalUpscaling/EFSR2HistoryFormat.gen.cpp
+D:\Projects\DRG modding\Project Generator\Template\Plugins\AMD\FSR2\Intermediate\Build\Win64\UE4Editor\Development\FSR2TemporalUpscaling\Definitions.FSR2TemporalUpscaling.h
+D:/Projects/DRG modding/Project Generator/Template/Plugins/AMD/FSR2/Intermediate/Build/Win64/UE4Editor/Inc/FSR2TemporalUpscaling/EFSR2HistoryFormat.gen.cpp
 D:\Programs\Epic Games\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UObject/GeneratedCppIncludes.h
 D:\Programs\Epic Games\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UObject/MetaData.h
-D:\Projects\DRG modding\Github Projects\ShoutFramework\Plugins\AMD\FSR2\Source\FSR2TemporalUpscaling/Public/EFSR2HistoryFormat.h
-D:\Projects\DRG modding\Github Projects\ShoutFramework\Plugins\AMD\FSR2\Intermediate\Build\Win64\UE4Editor\Inc\FSR2TemporalUpscaling\EFSR2HistoryFormat.generated.h
-D:/Projects/DRG modding/Github Projects/ShoutFramework/Plugins/AMD/FSR2/Intermediate/Build/Win64/UE4Editor/Inc/FSR2TemporalUpscaling/EFSR2QualityMode.gen.cpp
-D:\Projects\DRG modding\Github Projects\ShoutFramework\Plugins\AMD\FSR2\Source\FSR2TemporalUpscaling/Public/EFSR2QualityMode.h
-D:\Projects\DRG modding\Github Projects\ShoutFramework\Plugins\AMD\FSR2\Intermediate\Build\Win64\UE4Editor\Inc\FSR2TemporalUpscaling\EFSR2QualityMode.generated.h
-D:/Projects/DRG modding/Github Projects/ShoutFramework/Plugins/AMD/FSR2/Intermediate/Build/Win64/UE4Editor/Inc/FSR2TemporalUpscaling/FSR2Settings.gen.cpp
-D:\Projects\DRG modding\Github Projects\ShoutFramework\Plugins\AMD\FSR2\Source\FSR2TemporalUpscaling/Public/FSR2Settings.h
-D:\Projects\DRG modding\Github Projects\ShoutFramework\Plugins\AMD\FSR2\Intermediate\Build\Win64\UE4Editor\Inc\FSR2TemporalUpscaling\FSR2Settings.generated.h
-D:/Projects/DRG modding/Github Projects/ShoutFramework/Plugins/AMD/FSR2/Intermediate/Build/Win64/UE4Editor/Inc/FSR2TemporalUpscaling/FSR2TemporalUpscaling.init.gen.cpp
+D:\Projects\DRG modding\Project Generator\Template\Plugins\AMD\FSR2\Source\FSR2TemporalUpscaling/Public/EFSR2HistoryFormat.h
+D:\Projects\DRG modding\Project Generator\Template\Plugins\AMD\FSR2\Intermediate\Build\Win64\UE4Editor\Inc\FSR2TemporalUpscaling\EFSR2HistoryFormat.generated.h
+D:/Projects/DRG modding/Project Generator/Template/Plugins/AMD/FSR2/Intermediate/Build/Win64/UE4Editor/Inc/FSR2TemporalUpscaling/EFSR2QualityMode.gen.cpp
+D:\Projects\DRG modding\Project Generator\Template\Plugins\AMD\FSR2\Source\FSR2TemporalUpscaling/Public/EFSR2QualityMode.h
+D:\Projects\DRG modding\Project Generator\Template\Plugins\AMD\FSR2\Intermediate\Build\Win64\UE4Editor\Inc\FSR2TemporalUpscaling\EFSR2QualityMode.generated.h
+D:/Projects/DRG modding/Project Generator/Template/Plugins/AMD/FSR2/Intermediate/Build/Win64/UE4Editor/Inc/FSR2TemporalUpscaling/FSR2Settings.gen.cpp
+D:\Projects\DRG modding\Project Generator\Template\Plugins\AMD\FSR2\Source\FSR2TemporalUpscaling/Public/FSR2Settings.h
+D:\Projects\DRG modding\Project Generator\Template\Plugins\AMD\FSR2\Intermediate\Build\Win64\UE4Editor\Inc\FSR2TemporalUpscaling\FSR2Settings.generated.h
+D:/Projects/DRG modding/Project Generator/Template/Plugins/AMD/FSR2/Intermediate/Build/Win64/UE4Editor/Inc/FSR2TemporalUpscaling/FSR2TemporalUpscaling.init.gen.cpp

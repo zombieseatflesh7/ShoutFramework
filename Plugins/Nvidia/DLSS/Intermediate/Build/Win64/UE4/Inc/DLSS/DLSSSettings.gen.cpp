@@ -17,6 +17,7 @@ void EmptyLinkFunctionForGeneratedCodeDLSSSettings() {}
 	DLSS_API UClass* Z_Construct_UClass_UDLSSSettings();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UObject();
 	UPackage* Z_Construct_UPackage__Script_DLSS();
+	DLSS_API UEnum* Z_Construct_UEnum_DLSS_EDLSSPreset();
 // End Cross Module References
 	void UDLSSSettings::StaticRegisterNativesUDLSSSettings()
 	{
@@ -88,6 +89,36 @@ void EmptyLinkFunctionForGeneratedCodeDLSSSettings() {}
 #endif
 		static void NewProp_bCustomDLSSBinaryExists_SetBit(void* Obj);
 		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_bCustomDLSSBinaryExists;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_bAllowOTAUpdate_MetaData[];
+#endif
+		static void NewProp_bAllowOTAUpdate_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_bAllowOTAUpdate;
+		static const UE4CodeGen_Private::FBytePropertyParams NewProp_DLAAPreset_Underlying;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_DLAAPreset_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FEnumPropertyParams NewProp_DLAAPreset;
+		static const UE4CodeGen_Private::FBytePropertyParams NewProp_DLSSQualityPreset_Underlying;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_DLSSQualityPreset_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FEnumPropertyParams NewProp_DLSSQualityPreset;
+		static const UE4CodeGen_Private::FBytePropertyParams NewProp_DLSSBalancedPreset_Underlying;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_DLSSBalancedPreset_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FEnumPropertyParams NewProp_DLSSBalancedPreset;
+		static const UE4CodeGen_Private::FBytePropertyParams NewProp_DLSSPerformancePreset_Underlying;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_DLSSPerformancePreset_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FEnumPropertyParams NewProp_DLSSPerformancePreset;
+		static const UE4CodeGen_Private::FBytePropertyParams NewProp_DLSSUltraPerformancePreset_Underlying;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_DLSSUltraPerformancePreset_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FEnumPropertyParams NewProp_DLSSUltraPerformancePreset;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
@@ -236,6 +267,63 @@ void EmptyLinkFunctionForGeneratedCodeDLSSSettings() {}
 		((UDLSSSettings*)Obj)->bCustomDLSSBinaryExists = 1;
 	}
 	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UDLSSSettings_Statics::NewProp_bCustomDLSSBinaryExists = { "bCustomDLSSBinaryExists", nullptr, (EPropertyFlags)0x0010040000004005, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(UDLSSSettings), &Z_Construct_UClass_UDLSSSettings_Statics::NewProp_bCustomDLSSBinaryExists_SetBit, METADATA_PARAMS(Z_Construct_UClass_UDLSSSettings_Statics::NewProp_bCustomDLSSBinaryExists_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UDLSSSettings_Statics::NewProp_bCustomDLSSBinaryExists_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UDLSSSettings_Statics::NewProp_bAllowOTAUpdate_MetaData[] = {
+		{ "AllowPrivateAccess", "TRUE" },
+		{ "Category", "DLSSSettings" },
+		{ "ModuleRelativePath", "Public/DLSSSettings.h" },
+	};
+#endif
+	void Z_Construct_UClass_UDLSSSettings_Statics::NewProp_bAllowOTAUpdate_SetBit(void* Obj)
+	{
+		((UDLSSSettings*)Obj)->bAllowOTAUpdate = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UDLSSSettings_Statics::NewProp_bAllowOTAUpdate = { "bAllowOTAUpdate", nullptr, (EPropertyFlags)0x0010000000004005, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(UDLSSSettings), &Z_Construct_UClass_UDLSSSettings_Statics::NewProp_bAllowOTAUpdate_SetBit, METADATA_PARAMS(Z_Construct_UClass_UDLSSSettings_Statics::NewProp_bAllowOTAUpdate_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UDLSSSettings_Statics::NewProp_bAllowOTAUpdate_MetaData)) };
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UClass_UDLSSSettings_Statics::NewProp_DLAAPreset_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UDLSSSettings_Statics::NewProp_DLAAPreset_MetaData[] = {
+		{ "AllowPrivateAccess", "TRUE" },
+		{ "Category", "DLSSSettings" },
+		{ "ModuleRelativePath", "Public/DLSSSettings.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UClass_UDLSSSettings_Statics::NewProp_DLAAPreset = { "DLAAPreset", nullptr, (EPropertyFlags)0x0010040000004005, UE4CodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UDLSSSettings, DLAAPreset), Z_Construct_UEnum_DLSS_EDLSSPreset, METADATA_PARAMS(Z_Construct_UClass_UDLSSSettings_Statics::NewProp_DLAAPreset_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UDLSSSettings_Statics::NewProp_DLAAPreset_MetaData)) };
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UClass_UDLSSSettings_Statics::NewProp_DLSSQualityPreset_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UDLSSSettings_Statics::NewProp_DLSSQualityPreset_MetaData[] = {
+		{ "AllowPrivateAccess", "TRUE" },
+		{ "Category", "DLSSSettings" },
+		{ "ModuleRelativePath", "Public/DLSSSettings.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UClass_UDLSSSettings_Statics::NewProp_DLSSQualityPreset = { "DLSSQualityPreset", nullptr, (EPropertyFlags)0x0010040000004005, UE4CodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UDLSSSettings, DLSSQualityPreset), Z_Construct_UEnum_DLSS_EDLSSPreset, METADATA_PARAMS(Z_Construct_UClass_UDLSSSettings_Statics::NewProp_DLSSQualityPreset_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UDLSSSettings_Statics::NewProp_DLSSQualityPreset_MetaData)) };
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UClass_UDLSSSettings_Statics::NewProp_DLSSBalancedPreset_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UDLSSSettings_Statics::NewProp_DLSSBalancedPreset_MetaData[] = {
+		{ "AllowPrivateAccess", "TRUE" },
+		{ "Category", "DLSSSettings" },
+		{ "ModuleRelativePath", "Public/DLSSSettings.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UClass_UDLSSSettings_Statics::NewProp_DLSSBalancedPreset = { "DLSSBalancedPreset", nullptr, (EPropertyFlags)0x0010040000004005, UE4CodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UDLSSSettings, DLSSBalancedPreset), Z_Construct_UEnum_DLSS_EDLSSPreset, METADATA_PARAMS(Z_Construct_UClass_UDLSSSettings_Statics::NewProp_DLSSBalancedPreset_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UDLSSSettings_Statics::NewProp_DLSSBalancedPreset_MetaData)) };
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UClass_UDLSSSettings_Statics::NewProp_DLSSPerformancePreset_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UDLSSSettings_Statics::NewProp_DLSSPerformancePreset_MetaData[] = {
+		{ "AllowPrivateAccess", "TRUE" },
+		{ "Category", "DLSSSettings" },
+		{ "ModuleRelativePath", "Public/DLSSSettings.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UClass_UDLSSSettings_Statics::NewProp_DLSSPerformancePreset = { "DLSSPerformancePreset", nullptr, (EPropertyFlags)0x0010040000004005, UE4CodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UDLSSSettings, DLSSPerformancePreset), Z_Construct_UEnum_DLSS_EDLSSPreset, METADATA_PARAMS(Z_Construct_UClass_UDLSSSettings_Statics::NewProp_DLSSPerformancePreset_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UDLSSSettings_Statics::NewProp_DLSSPerformancePreset_MetaData)) };
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UClass_UDLSSSettings_Statics::NewProp_DLSSUltraPerformancePreset_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UDLSSSettings_Statics::NewProp_DLSSUltraPerformancePreset_MetaData[] = {
+		{ "AllowPrivateAccess", "TRUE" },
+		{ "Category", "DLSSSettings" },
+		{ "ModuleRelativePath", "Public/DLSSSettings.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UClass_UDLSSSettings_Statics::NewProp_DLSSUltraPerformancePreset = { "DLSSUltraPerformancePreset", nullptr, (EPropertyFlags)0x0010040000004005, UE4CodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UDLSSSettings, DLSSUltraPerformancePreset), Z_Construct_UEnum_DLSS_EDLSSPreset, METADATA_PARAMS(Z_Construct_UClass_UDLSSSettings_Statics::NewProp_DLSSUltraPerformancePreset_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UDLSSSettings_Statics::NewProp_DLSSUltraPerformancePreset_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UDLSSSettings_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UDLSSSettings_Statics::NewProp_bEnableDLSSD3D12,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UDLSSSettings_Statics::NewProp_bEnableDLSSD3D11,
@@ -249,6 +337,17 @@ void EmptyLinkFunctionForGeneratedCodeDLSSSettings() {}
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UDLSSSettings_Statics::NewProp_NVIDIANGXApplicationId,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UDLSSSettings_Statics::NewProp_CustomDLSSBinaryPath,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UDLSSSettings_Statics::NewProp_bCustomDLSSBinaryExists,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UDLSSSettings_Statics::NewProp_bAllowOTAUpdate,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UDLSSSettings_Statics::NewProp_DLAAPreset_Underlying,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UDLSSSettings_Statics::NewProp_DLAAPreset,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UDLSSSettings_Statics::NewProp_DLSSQualityPreset_Underlying,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UDLSSSettings_Statics::NewProp_DLSSQualityPreset,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UDLSSSettings_Statics::NewProp_DLSSBalancedPreset_Underlying,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UDLSSSettings_Statics::NewProp_DLSSBalancedPreset,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UDLSSSettings_Statics::NewProp_DLSSPerformancePreset_Underlying,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UDLSSSettings_Statics::NewProp_DLSSPerformancePreset,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UDLSSSettings_Statics::NewProp_DLSSUltraPerformancePreset_Underlying,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UDLSSSettings_Statics::NewProp_DLSSUltraPerformancePreset,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UDLSSSettings_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UDLSSSettings>::IsAbstract,
@@ -277,7 +376,7 @@ void EmptyLinkFunctionForGeneratedCodeDLSSSettings() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UDLSSSettings, 3701207997);
+	IMPLEMENT_CLASS(UDLSSSettings, 3933877320);
 	template<> DLSS_API UClass* StaticClass<UDLSSSettings>()
 	{
 		return UDLSSSettings::StaticClass();

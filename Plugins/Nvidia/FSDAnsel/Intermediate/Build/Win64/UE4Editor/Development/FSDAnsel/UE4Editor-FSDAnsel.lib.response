@@ -6,8 +6,8 @@
 /NAME:"UE4Editor-FSDAnsel.dll"
 /IGNORE:4221
 /NODEFAULTLIB
-"D:\Projects\DRG modding\Github Projects\ShoutFramework\Intermediate\Build\Win64\FSDEditor\Development\Engine\SharedPCH.Engine.h.obj"
-"D:\Projects\DRG modding\Github Projects\ShoutFramework\Plugins\Nvidia\FSDAnsel\Intermediate\Build\Win64\UE4Editor\Development\FSDAnsel\Module.FSDAnsel.cpp.obj"
-"D:\Projects\DRG modding\Github Projects\ShoutFramework\Plugins\Nvidia\FSDAnsel\Intermediate\Build\Win64\UE4Editor\Development\FSDAnsel\Module.FSDAnsel.gen.cpp.obj"
-"D:\Projects\DRG modding\Github Projects\ShoutFramework\Plugins\Nvidia\FSDAnsel\Intermediate\Build\Win64\UE4Editor\Development\FSDAnsel\Default.rc2.res"
-/OUT:"D:\Projects\DRG modding\Github Projects\ShoutFramework\Plugins\Nvidia\FSDAnsel\Intermediate\Build\Win64\UE4Editor\Development\FSDAnsel\UE4Editor-FSDAnsel.lib"
+"D:\Projects\DRG modding\Project Generator\Template\Intermediate\Build\Win64\FSDEditor\Development\Engine\SharedPCH.Engine.h.obj"
+"D:\Projects\DRG modding\Project Generator\Template\Plugins\Nvidia\FSDAnsel\Intermediate\Build\Win64\UE4Editor\Development\FSDAnsel\Module.FSDAnsel.cpp.obj"
+"D:\Projects\DRG modding\Project Generator\Template\Plugins\Nvidia\FSDAnsel\Intermediate\Build\Win64\UE4Editor\Development\FSDAnsel\Module.FSDAnsel.gen.cpp.obj"
+"D:\Projects\DRG modding\Project Generator\Template\Plugins\Nvidia\FSDAnsel\Intermediate\Build\Win64\UE4Editor\Development\FSDAnsel\Default.rc2.res"
+/OUT:"D:\Projects\DRG modding\Project Generator\Template\Plugins\Nvidia\FSDAnsel\Intermediate\Build\Win64\UE4Editor\Development\FSDAnsel\UE4Editor-FSDAnsel.lib"

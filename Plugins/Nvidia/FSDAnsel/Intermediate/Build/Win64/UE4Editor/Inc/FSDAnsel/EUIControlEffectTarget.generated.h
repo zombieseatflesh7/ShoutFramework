@@ -14,7 +14,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define FSDANSEL_EUIControlEffectTarget_generated_h
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID ShoutFramework_Plugins_Nvidia_FSDAnsel_Source_FSDAnsel_Public_EUIControlEffectTarget_h
+#define CURRENT_FILE_ID Template_Plugins_Nvidia_FSDAnsel_Source_FSDAnsel_Public_EUIControlEffectTarget_h
 
 
 #define FOREACH_ENUM_EUICONTROLEFFECTTARGET(op) \

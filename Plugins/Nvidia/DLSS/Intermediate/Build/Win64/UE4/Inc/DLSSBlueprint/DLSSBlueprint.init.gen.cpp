@@ -21,7 +21,7 @@ void EmptyLinkFunctionForGeneratedCodeDLSSBlueprint_init() {}
 				nullptr,
 				0,
 				PKG_CompiledIn | 0x00000000,
-				0xD0073A6D,
+				0x86778818,
 				0xB82B9392,
 				METADATA_PARAMS(nullptr, 0)
 			};

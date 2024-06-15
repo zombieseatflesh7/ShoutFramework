@@ -2,4 +2,5 @@
 #include "D:/Projects/DRG modding/Github Projects/ShoutFramework/Plugins/Nvidia/DLSS/Intermediate/Build/Win64/UE4/Inc/DLSS/DLSS.init.gen.cpp"
 #include "D:/Projects/DRG modding/Github Projects/ShoutFramework/Plugins/Nvidia/DLSS/Intermediate/Build/Win64/UE4/Inc/DLSS/DLSSOverrideSettings.gen.cpp"
 #include "D:/Projects/DRG modding/Github Projects/ShoutFramework/Plugins/Nvidia/DLSS/Intermediate/Build/Win64/UE4/Inc/DLSS/DLSSSettings.gen.cpp"
+#include "D:/Projects/DRG modding/Github Projects/ShoutFramework/Plugins/Nvidia/DLSS/Intermediate/Build/Win64/UE4/Inc/DLSS/EDLSSPreset.gen.cpp"
 #include "D:/Projects/DRG modding/Github Projects/ShoutFramework/Plugins/Nvidia/DLSS/Intermediate/Build/Win64/UE4/Inc/DLSS/EDLSSSettingOverride.gen.cpp"

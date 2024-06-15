@@ -30,7 +30,7 @@ void EmptyLinkFunctionForGeneratedCodeUDLSSMode() {}
 		return UDLSSMode_StaticEnum();
 	}
 	static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_UDLSSMode(UDLSSMode_StaticEnum, TEXT("/Script/DLSSBlueprint"), TEXT("UDLSSMode"), false, nullptr, nullptr);
-	uint32 Get_Z_Construct_UEnum_DLSSBlueprint_UDLSSMode_Hash() { return 1465169761U; }
+	uint32 Get_Z_Construct_UEnum_DLSSBlueprint_UDLSSMode_Hash() { return 2295987948U; }
 	UEnum* Z_Construct_UEnum_DLSSBlueprint_UDLSSMode()
 	{
 #if WITH_HOT_RELOAD
@@ -44,6 +44,7 @@ void EmptyLinkFunctionForGeneratedCodeUDLSSMode() {}
 			static const UE4CodeGen_Private::FEnumeratorParam Enumerators[] = {
 				{ "UDLSSMode::Off", (int64)UDLSSMode::Off },
 				{ "UDLSSMode::Auto", (int64)UDLSSMode::Auto },
+				{ "UDLSSMode::DLAA", (int64)UDLSSMode::DLAA },
 				{ "UDLSSMode::UltraQuality", (int64)UDLSSMode::UltraQuality },
 				{ "UDLSSMode::Quality", (int64)UDLSSMode::Quality },
 				{ "UDLSSMode::Balanced", (int64)UDLSSMode::Balanced },
@@ -55,6 +56,7 @@ void EmptyLinkFunctionForGeneratedCodeUDLSSMode() {}
 				{ "Auto.Name", "UDLSSMode::Auto" },
 				{ "Balanced.Name", "UDLSSMode::Balanced" },
 				{ "BlueprintType", "true" },
+				{ "DLAA.Name", "UDLSSMode::DLAA" },
 				{ "ModuleRelativePath", "Public/UDLSSMode.h" },
 				{ "Off.Name", "UDLSSMode::Off" },
 				{ "Performance.Name", "UDLSSMode::Performance" },

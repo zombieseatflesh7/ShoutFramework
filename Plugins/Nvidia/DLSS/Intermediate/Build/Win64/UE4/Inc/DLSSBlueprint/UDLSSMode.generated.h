@@ -20,6 +20,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define FOREACH_ENUM_UDLSSMODE(op) \
 	op(UDLSSMode::Off) \
 	op(UDLSSMode::Auto) \
+	op(UDLSSMode::DLAA) \
 	op(UDLSSMode::UltraQuality) \
 	op(UDLSSMode::Quality) \
 	op(UDLSSMode::Balanced) \

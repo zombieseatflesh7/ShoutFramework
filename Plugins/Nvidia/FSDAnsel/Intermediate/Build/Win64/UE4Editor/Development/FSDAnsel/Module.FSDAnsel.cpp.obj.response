@@ -29,10 +29,10 @@
 /wd4244
 /wd4838
 /I .
-/I "D:\Projects\DRG modding\Github Projects\ShoutFramework\Plugins\Nvidia\FSDAnsel\Source\FSDAnsel\Private"
-/I "D:\Projects\DRG modding\Github Projects\ShoutFramework\Plugins\Nvidia\FSDAnsel\Intermediate\Build\Win64\UE4Editor\Inc\FSDAnsel"
-/I "D:\Projects\DRG modding\Github Projects\ShoutFramework\Plugins\Nvidia\FSDAnsel\Source"
-/I "D:\Projects\DRG modding\Github Projects\ShoutFramework\Plugins\Nvidia\FSDAnsel\Source\FSDAnsel\Public"
+/I "D:\Projects\DRG modding\Project Generator\Template\Plugins\Nvidia\FSDAnsel\Source\FSDAnsel\Private"
+/I "D:\Projects\DRG modding\Project Generator\Template\Plugins\Nvidia\FSDAnsel\Intermediate\Build\Win64\UE4Editor\Inc\FSDAnsel"
+/I "D:\Projects\DRG modding\Project Generator\Template\Plugins\Nvidia\FSDAnsel\Source"
+/I "D:\Projects\DRG modding\Project Generator\Template\Plugins\Nvidia\FSDAnsel\Source\FSDAnsel\Public"
 /I Runtime
 /I Runtime\TraceLog\Public
 /I Runtime\Core\Public
@@ -261,12 +261,12 @@
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.22621.0\shared"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.22621.0\um"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.22621.0\winrt"
-/FI"D:\Projects\DRG modding\Github Projects\ShoutFramework\Intermediate\Build\Win64\FSDEditor\Development\Engine\SharedPCH.Engine.h"
-/Yu"D:\Projects\DRG modding\Github Projects\ShoutFramework\Intermediate\Build\Win64\FSDEditor\Development\Engine\SharedPCH.Engine.h"
-/Fp"D:\Projects\DRG modding\Github Projects\ShoutFramework\Intermediate\Build\Win64\FSDEditor\Development\Engine\SharedPCH.Engine.h.pch"
-"D:\Projects\DRG modding\Github Projects\ShoutFramework\Plugins\Nvidia\FSDAnsel\Intermediate\Build\Win64\UE4Editor\Development\FSDAnsel\Module.FSDAnsel.cpp"
-/FI"D:\Projects\DRG modding\Github Projects\ShoutFramework\Plugins\Nvidia\FSDAnsel\Intermediate\Build\Win64\UE4Editor\Development\FSDAnsel\Definitions.FSDAnsel.h"
-/Fo"D:\Projects\DRG modding\Github Projects\ShoutFramework\Plugins\Nvidia\FSDAnsel\Intermediate\Build\Win64\UE4Editor\Development\FSDAnsel\Module.FSDAnsel.cpp.obj"
+/FI"D:\Projects\DRG modding\Project Generator\Template\Intermediate\Build\Win64\FSDEditor\Development\Engine\SharedPCH.Engine.h"
+/Yu"D:\Projects\DRG modding\Project Generator\Template\Intermediate\Build\Win64\FSDEditor\Development\Engine\SharedPCH.Engine.h"
+/Fp"D:\Projects\DRG modding\Project Generator\Template\Intermediate\Build\Win64\FSDEditor\Development\Engine\SharedPCH.Engine.h.pch"
+"D:\Projects\DRG modding\Project Generator\Template\Plugins\Nvidia\FSDAnsel\Intermediate\Build\Win64\UE4Editor\Development\FSDAnsel\Module.FSDAnsel.cpp"
+/FI"D:\Projects\DRG modding\Project Generator\Template\Plugins\Nvidia\FSDAnsel\Intermediate\Build\Win64\UE4Editor\Development\FSDAnsel\Definitions.FSDAnsel.h"
+/Fo"D:\Projects\DRG modding\Project Generator\Template\Plugins\Nvidia\FSDAnsel\Intermediate\Build\Win64\UE4Editor\Development\FSDAnsel\Module.FSDAnsel.cpp.obj"
 /TP
 /GR-
 /W4

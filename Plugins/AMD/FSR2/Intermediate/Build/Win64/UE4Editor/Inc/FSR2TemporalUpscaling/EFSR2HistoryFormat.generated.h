@@ -14,7 +14,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define FSR2TEMPORALUPSCALING_EFSR2HistoryFormat_generated_h
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID ShoutFramework_Plugins_AMD_FSR2_Source_FSR2TemporalUpscaling_Public_EFSR2HistoryFormat_h
+#define CURRENT_FILE_ID Template_Plugins_AMD_FSR2_Source_FSR2TemporalUpscaling_Public_EFSR2HistoryFormat_h
 
 
 #define FOREACH_ENUM_EFSR2HISTORYFORMAT(op) \

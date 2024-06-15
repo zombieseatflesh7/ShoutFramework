@@ -20,16 +20,23 @@ enum class UDLSSSupport : uint8;
 #define ShoutFramework_Plugins_Nvidia_DLSS_Source_DLSSBlueprint_Public_DLSSLibrary_h_11_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execEnableDLAA); \
+	DECLARE_FUNCTION(execEnableDLSS); \
+	DECLARE_FUNCTION(execEnableDLSSRR); \
 	DECLARE_FUNCTION(execGetDefaultDLSSMode); \
 	DECLARE_FUNCTION(execGetDLSSMinimumDriverVersion); \
 	DECLARE_FUNCTION(execGetDLSSMode); \
 	DECLARE_FUNCTION(execGetDLSSModeInformation); \
+	DECLARE_FUNCTION(execGetDLSSRRMinimumDriverVersion); \
 	DECLARE_FUNCTION(execGetDLSSScreenPercentageRange); \
 	DECLARE_FUNCTION(execGetDLSSSharpness); \
 	DECLARE_FUNCTION(execGetSupportedDLSSModes); \
 	DECLARE_FUNCTION(execIsDLAAEnabled); \
+	DECLARE_FUNCTION(execIsDLSSEnabled); \
 	DECLARE_FUNCTION(execIsDLSSModeSupported); \
+	DECLARE_FUNCTION(execIsDLSSRREnabled); \
+	DECLARE_FUNCTION(execIsDLSSRRSupported); \
 	DECLARE_FUNCTION(execIsDLSSSupported); \
+	DECLARE_FUNCTION(execQueryDLSSRRSupport); \
 	DECLARE_FUNCTION(execQueryDLSSSupport); \
 	DECLARE_FUNCTION(execSetDLSSMode); \
 	DECLARE_FUNCTION(execSetDLSSSharpness);
@@ -38,16 +45,23 @@ enum class UDLSSSupport : uint8;
 #define ShoutFramework_Plugins_Nvidia_DLSS_Source_DLSSBlueprint_Public_DLSSLibrary_h_11_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execEnableDLAA); \
+	DECLARE_FUNCTION(execEnableDLSS); \
+	DECLARE_FUNCTION(execEnableDLSSRR); \
 	DECLARE_FUNCTION(execGetDefaultDLSSMode); \
 	DECLARE_FUNCTION(execGetDLSSMinimumDriverVersion); \
 	DECLARE_FUNCTION(execGetDLSSMode); \
 	DECLARE_FUNCTION(execGetDLSSModeInformation); \
+	DECLARE_FUNCTION(execGetDLSSRRMinimumDriverVersion); \
 	DECLARE_FUNCTION(execGetDLSSScreenPercentageRange); \
 	DECLARE_FUNCTION(execGetDLSSSharpness); \
 	DECLARE_FUNCTION(execGetSupportedDLSSModes); \
 	DECLARE_FUNCTION(execIsDLAAEnabled); \
+	DECLARE_FUNCTION(execIsDLSSEnabled); \
 	DECLARE_FUNCTION(execIsDLSSModeSupported); \
+	DECLARE_FUNCTION(execIsDLSSRREnabled); \
+	DECLARE_FUNCTION(execIsDLSSRRSupported); \
 	DECLARE_FUNCTION(execIsDLSSSupported); \
+	DECLARE_FUNCTION(execQueryDLSSRRSupport); \
 	DECLARE_FUNCTION(execQueryDLSSSupport); \
 	DECLARE_FUNCTION(execSetDLSSMode); \
 	DECLARE_FUNCTION(execSetDLSSSharpness);

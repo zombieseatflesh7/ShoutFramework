@@ -64,10 +64,6 @@
 			"Type": "DynamicLibrary"
 		},
 		{
-			"Path": "$(EngineDir)/Plugins/Runtime/WebBrowserWidget/Binaries/Win64/UE4Editor-WebBrowserWidget.dll",
-			"Type": "DynamicLibrary"
-		},
-		{
 			"Path": "$(EngineDir)/Plugins/Media/MfMedia/Binaries/Win64/UE4Editor-MfMediaEditor.dll",
 			"Type": "DynamicLibrary"
 		},
@@ -236,10 +232,6 @@
 			"Type": "SymbolFile"
 		},
 		{
-			"Path": "$(EngineDir)/Plugins/Runtime/Nvidia/Reflex/Binaries/Win64/UE4Editor-Reflex.dll",
-			"Type": "DynamicLibrary"
-		},
-		{
 			"Path": "$(ProjectDir)/Plugins/DSTelemetry/Binaries/Win64/UE4Editor-DSTelemetry.dll",
 			"Type": "DynamicLibrary"
 		},
@@ -273,6 +265,22 @@
 		},
 		{
 			"Path": "$(ProjectDir)/Plugins/DiscordSDK/Binaries/Win64/UE4Editor-DiscordSDK.pdb",
+			"Type": "SymbolFile"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/EnginePlugins/Runtime/Nvidia/Streamline/Binaries/Win64/UE4Editor-StreamlineBlueprint.dll",
+			"Type": "DynamicLibrary"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/EnginePlugins/Runtime/Nvidia/Streamline/Binaries/Win64/UE4Editor-StreamlineBlueprint.pdb",
+			"Type": "SymbolFile"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/EnginePlugins/Runtime/Nvidia/Streamline/Binaries/Win64/UE4Editor-StreamlineRHI.dll",
+			"Type": "DynamicLibrary"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/EnginePlugins/Runtime/Nvidia/Streamline/Binaries/Win64/UE4Editor-StreamlineRHI.pdb",
 			"Type": "SymbolFile"
 		},
 		{
@@ -2160,18 +2168,6 @@
 			"Type": "DynamicLibrary"
 		},
 		{
-			"Path": "$(EngineDir)/Binaries/Win64/UE4Editor-CEF3Utils.dll",
-			"Type": "DynamicLibrary"
-		},
-		{
-			"Path": "$(EngineDir)/Binaries/Win64/UE4Editor-WebBrowser.dll",
-			"Type": "DynamicLibrary"
-		},
-		{
-			"Path": "$(EngineDir)/Binaries/Win64/UE4Editor-WebBrowserTexture.dll",
-			"Type": "DynamicLibrary"
-		},
-		{
 			"Path": "$(EngineDir)/Binaries/Win64/UE4Editor-AudioAnalyzer.dll",
 			"Type": "DynamicLibrary"
 		},
@@ -2292,10 +2288,6 @@
 			"Type": "RequiredResource"
 		},
 		{
-			"Path": "$(EngineDir)/Plugins/Runtime/WebBrowserWidget/Binaries/Win64/UE4Editor.modules",
-			"Type": "RequiredResource"
-		},
-		{
 			"Path": "$(EngineDir)/Plugins/Media/MfMedia/Binaries/Win64/UE4Editor.modules",
 			"Type": "RequiredResource"
 		},
@@ -2372,10 +2364,6 @@
 			"Type": "RequiredResource"
 		},
 		{
-			"Path": "$(EngineDir)/Plugins/Runtime/Nvidia/Reflex/Binaries/Win64/UE4Editor.modules",
-			"Type": "RequiredResource"
-		},
-		{
 			"Path": "$(ProjectDir)/Plugins/DSTelemetry/Binaries/Win64/UE4Editor.modules",
 			"Type": "RequiredResource"
 		},
@@ -2393,6 +2381,10 @@
 		},
 		{
 			"Path": "$(ProjectDir)/Plugins/DiscordSDK/Binaries/Win64/UE4Editor.modules",
+			"Type": "RequiredResource"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/EnginePlugins/Runtime/Nvidia/Streamline/Binaries/Win64/UE4Editor.modules",
 			"Type": "RequiredResource"
 		},
 		{
@@ -2742,10 +2734,6 @@
 			"Type": "UFS"
 		},
 		{
-			"Path": "$(EngineDir)/Plugins/Runtime/WebBrowserWidget/WebBrowserWidget.uplugin",
-			"Type": "UFS"
-		},
-		{
 			"Path": "$(EngineDir)/Plugins/Media/MfMedia/MfMedia.uplugin",
 			"Type": "UFS"
 		},
@@ -2834,10 +2822,6 @@
 			"Type": "UFS"
 		},
 		{
-			"Path": "$(EngineDir)/Plugins/Runtime/Nvidia/Reflex/Reflex.uplugin",
-			"Type": "UFS"
-		},
-		{
 			"Path": "$(ProjectDir)/Plugins/DSTelemetry/DSTelemetry.uplugin",
 			"Type": "UFS"
 		},
@@ -2855,6 +2839,10 @@
 		},
 		{
 			"Path": "$(ProjectDir)/Plugins/DiscordSDK/DiscordSDK.uplugin",
+			"Type": "UFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/EnginePlugins/Runtime/Nvidia/Streamline/Streamline.uplugin",
 			"Type": "UFS"
 		},
 		{
@@ -20279,10 +20267,6 @@
 		},
 		{
 			"Path": "$(EngineDir)/Binaries/ThirdParty/FreeImage/Win64/FreeImage.dll",
-			"Type": "NonUFS"
-		},
-		{
-			"Path": "$(EngineDir)/Binaries/Win64/UnrealCEFSubProcess.exe",
 			"Type": "NonUFS"
 		}
 	],

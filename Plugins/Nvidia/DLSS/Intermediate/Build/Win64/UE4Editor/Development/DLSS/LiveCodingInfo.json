@@ -10,6 +10,7 @@
 			"DLSS.init.gen.cpp.obj",
 			"DLSSOverrideSettings.gen.cpp.obj",
 			"DLSSSettings.gen.cpp.obj",
+			"EDLSSPreset.gen.cpp.obj",
 			"EDLSSSettingOverride.gen.cpp.obj"
 		]
 	}
