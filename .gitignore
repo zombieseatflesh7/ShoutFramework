@@ -98,6 +98,9 @@
 !Makefile.*
 !Settings.settings
 
+# Content
+!*.uasset
+
 # Specific names
 !README
 !AUTHORS
