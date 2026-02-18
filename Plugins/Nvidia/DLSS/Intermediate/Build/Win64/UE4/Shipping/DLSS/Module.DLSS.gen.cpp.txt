@@ -1,7 +1,7 @@
 D:\Projects\DRG modding\Github Projects\ShoutFramework\Plugins\Nvidia\DLSS\Intermediate\Build\Win64\UE4\Shipping\DLSS\Definitions.DLSS.h
 D:/Projects/DRG modding/Github Projects/ShoutFramework/Plugins/Nvidia/DLSS/Intermediate/Build/Win64/UE4/Inc/DLSS/DLSS.init.gen.cpp
-D:\Programs\Epic Games\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UObject/GeneratedCppIncludes.h
-D:\Programs\Epic Games\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UObject/MetaData.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UObject/GeneratedCppIncludes.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UObject/MetaData.h
 D:/Projects/DRG modding/Github Projects/ShoutFramework/Plugins/Nvidia/DLSS/Intermediate/Build/Win64/UE4/Inc/DLSS/DLSSOverrideSettings.gen.cpp
 D:\Projects\DRG modding\Github Projects\ShoutFramework\Plugins\Nvidia\DLSS\Source\DLSS/Public/DLSSOverrideSettings.h
 D:\Projects\DRG modding\Github Projects\ShoutFramework\Plugins\Nvidia\DLSS\Source\DLSS\Public\EDLSSSettingOverride.h
